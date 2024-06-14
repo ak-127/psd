@@ -24,9 +24,9 @@ now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 today = date.today()
 day = today.strftime("%b-%d-%Y")
-
+note = input("Note : ")
 print(pwd)
 
-file1 = open("psds.txt", "a")
-file1.write(pwd +" ("+current_time +" "+  day + ") " +'\n')
+file1 = open("/home/ak/.psds.txt", "a")
+file1.write(pwd +" ("+current_time +" "+  day + ") " + "[" + note + "]" '\n')
 file1.close()
